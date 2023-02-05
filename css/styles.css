@@ -1,0 +1,470 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    color: var(--main-text-color)
+}
+
+:root {
+    --main-text-color: #434455;
+    --nav-color: #4D5AE5;
+    --second-text-color: #2E2F42;
+    --main-title-color: #FFFFFF;
+    --footer-text: #E7E9FC;
+    --background-color: #F4F4FD;
+    --background-btn-hover: #404BBF;
+    --gra: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7));
+}
+
+h1,h2,h3,h4,p,ul {
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.list {
+list-style: none;
+}
+
+.link {
+text-decoration: none;
+}
+
+.container {
+    width: 1158px;
+    padding: 0 15px;
+    margin: 0 auto;
+    /* outline: 2px solid red; */
+}
+
+.section {
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+.section-1 {
+    padding-top: 188px;
+    padding-bottom: 188px;
+}
+.section-list {
+    padding-top: 96px;
+}
+.section-portfolio {
+    padding-bottom: 120px;
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+    padding-top: 24px;
+    padding-bottom: 24px;
+}
+
+.header {
+    border-bottom: 1px solid var(--footer-text);
+}
+
+.header-navigation {
+    display: flex;
+}
+
+.header-logo {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 1.33;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--nav-color);
+    margin-right: 76px;
+}
+
+.header-logo-part {
+    color: var(--second-text-color)
+}
+
+.header-list {
+    display: flex;
+    align-items: center;
+}
+
+.header-item:not(:last-child) {
+    margin-right: 40px;
+}
+
+.header-link {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--second-text-color);
+}
+
+.header-link:hover,.header-link:focus {
+    color: var(--background-btn-hover)
+}
+
+address {
+    margin-left: auto;
+}
+
+.header-mail {
+    font-style: normal;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--main-text-color);
+    margin-right: 40px;     
+}
+
+.header-mail:hover,.header-mail:focus {
+    color: var(--background-btn-hover)
+}
+
+.header-tel {
+    font-style: normal;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--main-text-color)    
+}
+
+.header-tel:hover,.header-tel:focus {
+    color: var(--background-btn-hover)
+}
+
+.hero {
+    text-align: center;
+    background-color: var(--second-text-color);
+    background-image: var(--gra), url(../images/hero-bg.jpg);
+    max-width: 1440px;
+}
+
+.hero-title {
+    margin: 0 auto;
+    max-width: 494px;
+    font-size: 56px;
+    line-height: 1.07;
+    letter-spacing: 0.02em;
+    text-align: center;
+    color: var(--main-title-color)
+}
+
+.hero-btn {
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    color: var(--main-title-color);
+    background: var(--nav-color);
+    cursor: pointer;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    padding: 16px 32px 16px 32px;
+    margin-top: 48px;
+    min-width: 169px;
+    border: none;
+}
+
+.hero-btn:hover,.hero-btn:focus {
+    background: var(--background-btn-hover);
+
+}
+
+.visually-hidden {
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;    
+}
+
+.menu-icon-box {
+
+}
+
+.menu-list {
+    display: flex;
+}
+
+.menu-item {
+    flex-basis: calc((100% - 72px) / 4); 
+}
+
+.menu-item:not(:last-child) {
+    margin-right: 24px;
+}
+
+.menu-title {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: var(--second-text-color);
+    margin-bottom: 8px;
+}
+
+.menu-text {
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--main-text-color)
+}
+
+.mobile {
+    padding-bottom: 120px;
+}
+
+.mobile-title {
+    font-size: 36px;
+    line-height: 1.11;
+    letter-spacing: 0.02em;
+    text-align: center;
+    text-transform: capitalize;
+    color: var(--second-text-color);
+    margin-bottom: 72px;
+}
+
+.mobile-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+}
+
+.mobile-item {
+    flex-basis: calc((100% - 48px) / 3);
+}
+
+.team {
+    background: var(--background-color)
+}
+
+.team-title {
+    font-size: 36px;
+    line-height: 1.11;
+    letter-spacing: 0.02em;
+    text-align: center;
+    text-transform: capitalize;
+    color: var(--second-text-color);
+    margin-bottom: 72px;
+}
+
+.team-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+}
+
+.team-card {
+    background: var(--main-title-color);
+    flex-basis: calc((100% - 72px) / 4);
+}
+
+.team-border {
+    text-align: center;
+    padding: 32px 0;
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 
+    0px 1px 1px rgba(46, 47, 66, 0.16),
+    0px 2px 1px rgba(46, 47, 66, 0.08);
+    border-radius: 0px 0px 4px 4px;
+}
+
+.team-name {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: var(--second-text-color);
+    margin-bottom: 8px;
+}
+
+.team-text {
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--main-text-color);
+    margin-bottom: 8px;
+}
+
+.team-media-list {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+}
+
+.team-media-item {
+    width: 40px;
+    height: 40px;
+}
+
+.team-media-link {
+    width: 100%;
+    height: 100%;
+    background-color: var(--nav-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+
+.team-media-icon {
+    fill: var(--nav-color);
+}
+
+.team-media-link:is(:hover,:focus) {
+    background-color: var(--background-btn-hover);
+}
+
+
+.footer {
+    background: var(--second-text-color);
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.footer-logo {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 1.16;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--nav-color);
+}
+
+.footer-logo-part {
+    color: var(--background-color)
+}
+
+.footer-text {
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--footer-text);
+    max-width: 264px;
+    margin-top: 16px;
+}
+
+.footer-title {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--main-title-color);
+    margin-bottom: 16px;
+}
+
+.footer-media {
+    display: flex;
+    align-items: baseline;
+    gap: 120px;
+}
+
+.footer-media-list {
+    display: flex;
+    gap: 16px;
+}
+
+.footer-media-item {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+}
+
+.footer-media-link { 
+}
+.footer-media-icon {
+    fill: var();
+}
+
+.button {
+}
+
+.button-title {
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;
+}
+
+.button-list {
+    margin-bottom: 72px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 24px;
+}
+
+.button-item {
+}
+
+.button-text {
+    padding: 12px 24px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    color: var(--nav-color);
+    background: var(--background-color);
+    border: 1px solid var(--footer-text);
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.button-text:hover,.button-text:focus {
+    background: var(--background-btn-hover);
+    color: var(--main-title-color)
+}
+
+.portfolio-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+}
+
+.portfolio-card {
+    flex-basis: calc((100% - 48px) / 3);
+
+}
+
+.portfolio-border {
+    border: 1px solid #E7E9FC;
+    border-top: none;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    padding-left: 16px;
+}
+
+.portfolio-suptitle {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: var(--second-text-color);
+    margin-bottom: 8px;
+}
+
+.portfolio-text {
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--main-text-color)
+}
