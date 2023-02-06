@@ -370,7 +370,7 @@ address {
     height: 100%;
 }
 
-.customers-logo:is(:hover,:focus) {
+.customers-logo-box:is(:hover,:focus) {
     border-color: var(--background-btn-hover);
 }
 
