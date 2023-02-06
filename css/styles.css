@@ -143,6 +143,7 @@ address {
     background-color: var(--second-text-color);
     background-image: var(--gra), url(../images/hero-bg.jpg);
     max-width: 1440px;
+    margin: 0 auto;
 }
 
 .hero-title {
@@ -356,6 +357,11 @@ address {
 .customers-logo-box {
     display: block;
     margin-right: 24px;
+    padding: 16px 32px;
+    border: 1px solid var(--logo);
+    border-radius: 4px;
+    width: 168px;
+    height: 88px;
 }
 
 .customers-link {
@@ -374,11 +380,8 @@ address {
 
 .customers-logo {
     fill: var(--logo);
-    width: 168px;
-    height: 88px;
-    border: 1px solid var(--logo);
-    border-radius: 4px;
-    padding: 16px 32px;
+    width: 104px;
+    height: 56px;
 }
 
 
@@ -518,7 +521,7 @@ address {
 }
 
 .portfolio-card-link:is(:hover,:focus) {
-    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
+    box-shadow:  0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
 .portfolio-border {
